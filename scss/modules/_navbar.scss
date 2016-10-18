@@ -1,0 +1,19 @@
+// ==========================================================================
+// Navbar
+// ==========================================================================
+
+.navbar {	
+	position: relative;
+	color: $white;
+	background-color: $grey;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 70px;
+	margin-bottom: em(40px);
+	@include mq(medium) {
+		justify-content: flex-start;
+		margin-bottom: em(50px);
+	}
+}
