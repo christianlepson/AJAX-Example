@@ -29,11 +29,12 @@ $searchForm.submit(function(e) {
                         // Avoid duplicate albums
                         if (!displayedAlbums.includes(albumName)) {
                             galleryHTML += '<div class="gallery__cell">' +
-                            '<a class="gallery__link" href="' + albumURL + '">' +
-                            '<img class="gallery__img" src="' + albumImageURL + '" alt=""/>' +
-                            '<span class="gallery__desc">' + albumName + '</span>' +
-                            '</a>' +
-                            '</div>';
+                                '<a class="gallery__link" href="' + albumImageURL + '"' +
+                                    ' data-lightbox="gallery"'  + ' data-title="' + albumName + '">' +
+                                '<img class="gallery__img" src="' + albumImageURL + '" alt=""/>' +
+                                '<span class="gallery__desc">' + albumName + '</span>' +
+                                '</a>' +
+                                '</div>';
                         }
                         displayedAlbums.push(result.items[i].name);
                     }

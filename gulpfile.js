@@ -8,7 +8,7 @@ var gulp = require('gulp'),
      del = require('del');
 
 gulp.task('concatScripts', function() {
-    return gulp.src(['js/jquery-3.1.1.js', 'js/main.js'])
+    return gulp.src(['js/jquery-3.1.1.js','js/lightbox.js', 'js/main.js'])
     .pipe(maps.init())
     .pipe(concat('app.js'))
     .pipe(maps.write('./'))
